@@ -1,0 +1,8 @@
+﻿services:
+  wan.trackmo.web:
+    image: wan.trackmo.web
+    build:
+      context: .
+      dockerfile: src/Wan.TrackMo.Web/Dockerfile
+    ports:
+      - "4500:8080"

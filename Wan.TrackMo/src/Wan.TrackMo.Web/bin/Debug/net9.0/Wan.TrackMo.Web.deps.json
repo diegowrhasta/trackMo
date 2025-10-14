@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Wan.TrackMo.Web/1.0.0": {
+        "runtime": {
+          "Wan.TrackMo.Web.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Wan.TrackMo.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
