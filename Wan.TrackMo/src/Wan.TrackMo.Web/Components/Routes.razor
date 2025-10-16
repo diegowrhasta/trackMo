@@ -1,6 +1,34 @@
-﻿<Router AppAssembly="typeof(Program).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)"/>
-        <FocusOnNavigate RouteData="routeData" Selector="h1"/>
-    </Found>
-</Router>
+﻿<ThemeProvider Theme="AppTheme">
+    <Router AppAssembly="typeof(Program).Assembly">
+        <Found Context="routeData">
+            <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)"/>
+            <FocusOnNavigate RouteData="routeData" Selector="h1"/>
+        </Found>
+    </Router>
+</ThemeProvider>
+
+@code {
+
+    private Theme AppTheme = new()
+    {
+        ColorOptions = new ThemeColorOptions
+        {
+            Primary = "#364A62", // deep slate
+            Secondary = "#DC8E75", // warm peach
+            Success = "#91AEB0", // muted teal
+            Warning = "#E3B386", // soft gold
+            Danger = "#B5594B", // brick
+            Info = "#776C6B", // muted mauve
+            Light = "#F8F9FA",
+            Dark = "#222222"
+        },
+        BackgroundOptions = new ThemeBackgroundOptions
+        {
+            Primary = "#FFFFFF", // main content background
+            Secondary = "#F6F5F4" // subtle warm secondary background
+        },
+        IsRounded = true,
+        IsGradient = false
+    };
+
+}
